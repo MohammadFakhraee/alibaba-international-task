@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feature.menu.MenuFragment">
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/bigSquare1"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin"
+        app:cardBackgroundColor="@color/red"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toStartOf="@+id/bigSquare2"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/bigSquare2"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_large"
+        app:cardBackgroundColor="@color/green"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bigSquare1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/smallSquare1"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:cardBackgroundColor="@color/yellow"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toStartOf="@+id/smallSquare2"
+        app:layout_constraintStart_toStartOf="@id/bigSquare1"
+        app:layout_constraintTop_toBottomOf="@id/bigSquare1" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/smallSquare2"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:cardBackgroundColor="@color/ultra_light_blue"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toStartOf="@+id/smallSquare3"
+        app:layout_constraintStart_toEndOf="@+id/smallSquare1"
+        app:layout_constraintTop_toTopOf="@id/smallSquare1"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/smallSquare3"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:cardBackgroundColor="@color/orange"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toStartOf="@+id/smallSquare4"
+        app:layout_constraintStart_toEndOf="@+id/smallSquare2"
+        app:layout_constraintTop_toTopOf="@id/smallSquare2"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/smallSquare4"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        app:cardBackgroundColor="@color/dark_blue"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toStartOf="@+id/smallSquare5"
+        app:layout_constraintStart_toEndOf="@+id/smallSquare3"
+        app:layout_constraintTop_toTopOf="@id/smallSquare3" />
+
+    <ir.mohammadhf.alibabainternationaltask.view.SquareView
+        android:id="@+id/smallSquare5"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="@dimen/margin_small"
+        app:cardBackgroundColor="@color/pink"
+        app:cardCornerRadius="@dimen/card_view_radius"
+        app:layout_constraintEnd_toEndOf="@id/bigSquare2"
+        app:layout_constraintStart_toEndOf="@+id/smallSquare4"
+        app:layout_constraintTop_toTopOf="@id/smallSquare4" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:background="@drawable/bg_view"
+        android:padding="@dimen/padding_large"
+        app:layout_constraintEnd_toEndOf="@+id/smallSquare5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/smallSquare1"
+        app:layout_constraintTop_toBottomOf="@+id/smallSquare1">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TxtTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="@dimen/margin_small"
+            android:text="@string/here_to_keep" />
+
+        <Button
+            android:id="@+id/letsGoBtn"
+            style="@style/BtnPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/margin_small"
+            android:enabled="false"
+            android:text="@string/lets_go" />
+
+        <EditText
+            android:id="@+id/destEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/textView2"
+            android:layout_alignTop="@id/letsGoBtn"
+            android:layout_alignBottom="@id/letsGoBtn"
+            android:layout_marginEnd="@dimen/margin"
+            android:layout_toStartOf="@+id/letsGoBtn"
+            android:hint="@string/hint_destination" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/TxtTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin"
+        android:text="@string/top_users"
+        app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    <ProgressBar
+        android:id="@+id/loadingPb"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/usersRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/relativeLayout"
+        app:layout_constraintStart_toStartOf="@id/relativeLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:listitem="@layout/item_user" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AliBaba International Task</string>
+    <string name="welcome_back">Welcome back!</string>
+    <string name="here_to_keep">Here to help you keep on the move. Where do you want to travel?</string>
+    <string name="lets_go">Let\'s go!</string>
+    <string name="hint_from">From</string>
+    <string name="hint_destination">Destination</string>
+    <string name="top_users">Top Users</string>
+    <string name="search">Search</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="done">Done</string>
+
+    <string name="content_disc_arrow_back">Back</string>
+</resources>
